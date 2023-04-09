@@ -23,7 +23,12 @@ const App = () => {
         <ResetStyled/>
         <ImageSlider slides={slides} />
         <Login>
-          <p>aaaaaaaa</p>
+          <Container>
+            <p>Login do Usuário</p>
+            <button>Entrar com o Sabiá</button>
+            <button>Criar conta no Sabiá</button>
+            <h4>Saiba mais sobre o Sabiá</h4>
+          </Container>
         </Login>
       
       </ContainerStyles>
@@ -41,7 +46,33 @@ const ContainerStyles = styled.div`
 `
 
 const Login = styled.div`
-
-background-color: red;
+color: #1E71A3;
+font-size: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color:#EFF4F7;
 width:30vw;
+`
+
+const Container = styled.div`
+
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: red;
+width: 300px;
+height: 300px;
+
+
+button{
+  margin-top: 40px;
+  height: 30px;
+  width: 200px;
+}
+h4{
+  margin-top: 20px;
+  font-size: 15px;
+}
 `
